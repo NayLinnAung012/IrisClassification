@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,redirect,url_for,flash
 import pickle
 
-model = pickle.load(open('lr_classifier.pkl','rb'))
+model = pickle.load(open('Ir_classifier.pkl','rb'))
 
 
 app = Flask(__name__)
