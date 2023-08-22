@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris</title>
+</head>
+<body>
+    <h1>Iris Classification</h1>
+    <div class="modal-body">
+        <form action="{{url_for('predict')}}" method="POST">
+          <div class="mb-3">
+            <label for="" class="col-form-label">P1:</label>
+            <input type="text" class="form-control" name="p1" required>
+          </div>
+          <div class="mb-3">
+            <label for="" class="col-form-label">P2:</label>
+            <input type="text" class="form-control" name="p2" required>
+          </div>
+          <div class="mb-3">
+            <label for="" class="col-form-label">P3:</label>
+            <input type="text" class="form-control" name="p3" required>
+          </div>
+          <div class="mb-3">
+            <label for="" class="col-form-label">P4:</label>
+            <input type="text" class="form-control" name="p4" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+        <h3>Predict : {{pred}}</h3>
+      </div>
+</body>
+</html>
